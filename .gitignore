@@ -1,0 +1,4 @@
+db.sqlite3
+packages/__pycache__/
+temp_user_file
+db.sqlite3
