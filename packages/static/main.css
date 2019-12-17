@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+}
+    
+nav {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 0;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 2%;
+    border:1px solid black;
+    padding:1%;
+    background-color: darkgrey;
+    border-radius: 4%;
+
+}
+nav ul li:hover{
+    background-color: grey;
+}
+
+a{
+    color: black;
+}
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: blue;
+    text-decoration: none;
+    border-radius: 2%;
+}
+
+
+.upButton{
+    position: fixed;
+}
+
+.error img{
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+    display: block;
+
+}

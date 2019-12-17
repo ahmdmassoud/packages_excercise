@@ -1,0 +1,19 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+            <div id="container">
+                <h2>Here is a list of all the packages in the file.</h2>
+                {% for package in jsonfile %}
+                    <div>
+                        <a href="{{package.PackagName}}">
+                                {{package.PackagName}}
+                        </a>
+                </div>
+                {% endfor %}
+            </div>
+        </body>
+    </html>
+
+{% endblock %}
+

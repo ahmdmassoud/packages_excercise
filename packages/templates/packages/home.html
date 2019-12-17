@@ -1,0 +1,14 @@
+{% include "base.html" %}
+<br/>
+<h3>Please upload linux packages file, you can find the file in the following directory
+        /var/lib/dpkg/status please note that the file must be less than 10MB.
+</h3>
+{% if error %}
+<h4>{{error}}</h4>
+{% endif %}
+<br/>
+<form action="/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Show all packages">
+</form>
