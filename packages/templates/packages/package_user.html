@@ -1,39 +1,40 @@
 {% include 'base.html' %}
 
 {% block content %}
-    <h1> {{package.PackagName}} </h1>
-        <div>
-            <div> 
-                <b> Description: </b>{{package.Description}}
-            </div>
-            <div><br/>
-                <b> dependencies: </b> 
-                <ul>
-                    {% if "None" in package.dependencies %}
-                        <li> None </li>
-                    {% else %}
-                        {% for depend in package.dependencies %}
-                            <li> <a href="/latest-user-package/{{depend}}">{{depend}} </a></li>
-                            
-                        {% endfor %}
-                    {% endif %}
-                
-                </ul>
-            </div>
-            <div>
-                <b> dependants: </b> 
-                <ul>
-                    {% if "" in package.dependants %}
-                        <li> None </li>
-                    {% else %}
-                        {% for dependant in package.dependants %}
-                            <li> <a href="/latest-user-package/{{dependant}}">{{dependant}} </a></li>
-                        {% endfor %}
-                    {% endif %}
-                </ul>
-            </div>
-        </div>
-        <h1><a href="../">Go back</a></h1>
-    </body>
+<h1> {{package.PackagName}} </h1>
+<div>
+    <div>
+        <b> Description: </b>{{package.Description}}
+    </div>
+    <div><br />
+        <b> dependencies: </b>
+        <ul>
+            {% if "None" in package.dependencies %}
+            <li> None </li>
+            {% else %}
+            {% for depend in package.dependencies %}
+            <li> <a href="/latest-user-package/{{depend}}">{{depend}} </a></li>
+
+            {% endfor %}
+            {% endif %}
+
+        </ul>
+    </div>
+    <div>
+        <b> dependants: </b>
+        <ul>
+            {% if "" in package.dependants %}
+            <li> None </li>
+            {% else %}
+            {% for dependant in package.dependants %}
+            <li> <a href="/latest-user-package/{{dependant}}">{{dependant}} </a></li>
+            {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+</div>
+<h1><a href="../">Go back</a></h1>
+</body>
+
 </html>
 {% endblock %}
