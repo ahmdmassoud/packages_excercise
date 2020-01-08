@@ -39,7 +39,7 @@ This is a view function that shows the main page for a sample file where it list
 
 def show(request):
     jsonoutput = extract(
-        '/home/ahmed/online assigment/status.real')
+        'status.real')
     return render(request, 'packages/show.html', {'jsonfile': jsonoutput, 'title': 'All Packages'})
 
 
@@ -50,7 +50,7 @@ This is a view function that return a specific package page for the sample file.
 
 def show_package(request, package_name):
     jsonoutput = extract(
-        '/home/ahmed/online assigment/status.real')
+        'status.real')
     package = get_package_by_name(jsonoutput, package_name)
     return render(request, 'packages/package.html', {'package': package, 'title': package["PackagName"]})
 
