@@ -6,6 +6,6 @@ if you get the this file, upload it to the app you will be able to navigate thro
 
 In this app I used Django framework to build the webserver and the backend.
 
-In case this App is not online Here is some screen shots of what you can do with it.
+In case this App is online http://packages-lister.herokuapp.com  but in case I took it down at some point, Here is some screen shots of what you can do with it.
 ![Gif demo for the App](trying_locally.gif)
 
